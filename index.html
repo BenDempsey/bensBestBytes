@@ -1,15 +1,42 @@
+Let's start by adding the viewport meta tag to ensure your website scales correctly on different devices. We'll also add some basic CSS media queries to make the design responsive.
+
+Here are the changes we'll make:
+
+1. Add the viewport meta tag in the `<head>` section.
+2. Update the CSS to include media queries for different screen sizes.
+
+Updated `index.html`:
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Ben's Best Bytes</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-image: url('GraduationCyberSecurity.png'); /* Change 'background.jpg' to your image file name */
             background-size: cover; /* This will make the background cover the entire page */
-            margin: 20; /* Remove default margin */
+            margin: 0; /* Remove default margin */
             padding: 20px; /* Add padding if needed */
-            height: 80vh; /* Make sure the body takes the full height of the viewport */
+            height: 100vh; /* Make sure the body takes the full height of the viewport */
+        }
+
+        p {
+            font-size: 16px; /* Default font size */
+        }
+
+        @media (min-width: 768px) {
+            p {
+                font-size: 18px; /* Font size for tablets and larger screens */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            p {
+                font-size: 20px; /* Font size for desktops and larger screens */
+            }
         }
     </style>
 </head>
@@ -17,6 +44,11 @@
     <p>Welcome to my webpage!</p>
 </body>
 </html>
+```
+
+In this updated version, we've added the viewport meta tag to ensure the page scales properly on different devices. Additionally, we added media queries to adjust the font size for different screen sizes.
+
+Would you like to proceed with these changes or need any further modifications?
 
 
 
