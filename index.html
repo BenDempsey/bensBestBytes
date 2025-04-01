@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html>
 <html>
 <head>
     <title>Ben's Best Bytes</title>
@@ -14,14 +14,23 @@
         }
 
         p {
-            font-size: 16px; /* Default font size */
+            font-size: 24px; /* Default font size increased by 50% */
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1300px) {
             p {
-                font-size: 18px; /* Font size for tablets and larger screens */
+                font-size: 27px; /* Font size for tablets and larger screens increased by 50% */
             }
-            
+        }
+
+        @media (max-width: 600px) {
+            /* Adjust styles for iPhone and other small screens */
+            body {
+                background-size: 90%; /* Adjust background size for small screens */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     </style>
 </head>
 <body>
