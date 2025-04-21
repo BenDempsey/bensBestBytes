@@ -1,4 +1,4 @@
-# bensBestBytes
+# BensBestBytes
 
 Here's my first go at a static website with links to more pages!
 
