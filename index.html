@@ -12,14 +12,35 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
   <div class="container"></div>
   <p><b>Welcome to my webpage!</b></p>
-        <a href="https://tryhackme.com/p/b1tfl1pper" target="_blank" rel="noopener noreferrer">
-            Click me for my TryHackMe profile
-          </a>
-          
+  <a href="https://tryhackme.com/p/b1tfl1pper" target="_blank" rel="noopener noreferrer">
+    Click me for my TryHackMe profile
+  </a>
+
+  <!-- Button to reference PASSWORDS_SUCK.html -->
+  <div class="button-container">
+    <a href="PASSWORDS_SUCK.html" class="button">Passwords Suck! But they don't have to</a>
+  </div>
 </body>
 </html>
