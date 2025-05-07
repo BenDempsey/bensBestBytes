@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,44 +6,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Body background fade effect */
-    body::before {
+    body.background-fade::before {
       content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
+      position: absolute;
       background-image: url('BensBestBytesLogo.jpg');
       background-repeat: repeat;
       background-size: 150px;
-      opacity: 0.08; /* subtle fade */
-      z-index: 0;
-      pointer-events: none;
+      background-position: center;
     }
-
-    /* Banner at the top */
-    .banner-container {
+    <div class="banner-container"<>/div> {
       height: 60px;
       background-image: url('BensBestBytesBanner.jpg');
-      background-size: cover;
-      background-position: center;
+      background-position: top center;
       background-repeat: no-repeat;
-      width: 100%;
-      z-index: 1;
-      position: relative;
+      background-size: contain;
     }
-
-    /* Main content image */
     .container {
       height: 30vh;
       background-image: url('GraduationCyberSecurity.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      margin-top: 20px;
-      z-index: 1;
-      position: relative;
     }
-
-    /* Button styles */
     .button-container {
       text-align: center;
       margin-top: 20px;
@@ -50,3 +35,27 @@
     .button {
       padding: 10px 20px;
       background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body class="background-fade">
+  <div class="banner-container"></div>
+  <div class="container"></div>
+  <p><b>Welcome to my webpage!</b></p>
+  <a href="https://tryhackme.com/p/b1tfl1pper" target="_blank" rel="noopener noreferrer">
+    Click me for my TryHackMe profile
+  </a>
+  <div class="button-container">
+    <a href="PASSWORDS_SUCK.html" class="button">Passwords Suck! But they don't have to</a>
+  </div>
+</body>
+</html>
