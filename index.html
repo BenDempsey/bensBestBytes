@@ -5,21 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body.background-fade::before {
-      content: "";
-      position: absolute;
-      background-image: url('BensBestBytesLogo.jpg');
-      background-repeat: repeat;
-      background-size: 150px;
-      background-position: center;
-    }
-    <div class="banner-container"<>/div> {
-      height: 60px;
-      background-image: url('BensBestBytesBanner.jpg');
-      background-position: top center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+.body-background-fade::before {
+    content: "";
+    position: absolute;
+    background-image: url('BensBestBytesLogo.jpg');
+    background-repeat: repeat;
+    background-size: 150px;
+    background-position: center;
+    /* Add width/height or set to cover the parent if needed */
+}
+
+.banner-container {
+    height: 60px;
+    background-image: url('BensBestBytesBanner.jpg');
+}
+</style>
+
+<div class="body-background-fade"></div>
+<div class="banner-container"></div>
+
     .container {
       height: 30vh;
       background-image: url('GraduationCyberSecurity.png');
