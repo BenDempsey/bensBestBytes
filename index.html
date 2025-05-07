@@ -5,25 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .background-fade {
+    body.background-fade {
       background-image: url('BensBestBytesLogo.jpg');
       background-repeat: repeat;
-      background-size: 150px; /* Adjust size as needed */
-      background-position: centre;
-      opacity: 0.4; /* Faded effect */
+      background-size: 150px;
+      background-position: center; /* Correct spelling */
+      opacity: 0.4;
       min-height: 100vh;
     }
-     .container {
-      height: 25vh; /* 25% of viewport height */
+    .banner-container {
+      height: 25vh;
       background-image: url('BensBestBytesBanner.jpg');
-      background-position: top;
+      background-position: top center;
       background-repeat: no-repeat;
       background-size: contain;
-     }
+    }
     .container {
       height: 30vh;
       background-image: url('GraduationCyberSecurity.png');
-      background-position: relative;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -46,15 +46,13 @@
     }
   </style>
 </head>
-<body>
-  <body class="background-fade">
+<body class="background-fade">
+  <div class="banner-container"></div>
   <div class="container"></div>
   <p><b>Welcome to my webpage!</b></p>
   <a href="https://tryhackme.com/p/b1tfl1pper" target="_blank" rel="noopener noreferrer">
     Click me for my TryHackMe profile
   </a>
-
-  <!-- Button to reference PASSWORDS_SUCK.html -->
   <div class="button-container">
     <a href="PASSWORDS_SUCK.html" class="button">Passwords Suck! But they don't have to</a>
   </div>
