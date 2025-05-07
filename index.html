@@ -6,27 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body.background-fade::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('BensBestBytesLogo.jpg');
-    background-repeat: repeat;
-    background-size: 150px;
-    background-position: center;
-    opacity: 0.4;
-    z-index: -1;
-}
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('BensBestBytesLogo.jpg');
+      background-repeat: repeat;
+      background-size: 150px;
+      background-position: center;
+      opacity: 0.4;
+      z-index: -1;
     }
     .banner-container {
-    height: 25vh;
-    background-image: url('BensBestBytesBanner.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+      height: 25vh;
+      background-image: url('BensBestBytesBanner.jpg');
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     .container {
       height: 30vh;
@@ -54,7 +52,7 @@
     }
   </style>
 </head>
-<body>
+<body class="background-fade">
   <div class="banner-container"></div>
   <div class="container"></div>
   <p><b>Welcome to my webpage!</b></p>
