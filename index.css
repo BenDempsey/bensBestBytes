@@ -35,12 +35,12 @@ body {
   background-repeat: no-repeat;
 }
 .bg-left {
-  background-image: url('BensBestBytesLogo.jpg');
+  background-image: url('images/BensBestBytesLogo.jpg');
   background-position: center 65%; /* Crop 4% from the top */
 }
 
 .bg-right {
-  background-image: url('BensBestBytesLogo.jpg');
+  background-image: url('images/BensBestBytesLogo.jpg');
   background-position: center 65%; /* Crop 4% from the top */
 }
 
