@@ -4,6 +4,110 @@
   <meta charset="utf-8">
   <title>BensBestBytesMore</title>
   <link href="more-content.css" rel="stylesheet">
+  <style>
+    body {
+      /* Uses your existing background from more-content.css */
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .content {
+      width: 360px;
+      margin: 48px 0 0 48px; /* space from top and left */
+      background: rgba(20, 30, 40, 0.93);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px #0007;
+      padding: 32px 24px 24px 24px;
+      text-align: left;
+    }
+    .content p {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 28px;
+      text-shadow: 0 2px 8px #000;
+    }
+    .button-container {
+      margin-bottom: 20px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 1em 0;
+      font-size: 1.08em;
+      background: #2196f3;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 8px #0004;
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+      text-align: center;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    .button:hover {
+      background: #1769aa;
+      transform: translateY(-2px) scale(1.03);
+    }
+    iframe {
+      width: 340px;
+      height: 120px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px #0006;
+      background: #222;
+      display: block;
+      margin-top: 8px;
+    }
+    .home-container {
+      width: 360px;
+      margin: 24px 0 0 48px; /* aligns with the content box */
+      text-align: left;
+    }
+    .home-button {
+      display: inline-block;
+      padding: 0.8em 2.2em;
+      background: #0F4761;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+      box-shadow: 0 2px 8px #0004;
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+      text-align: center;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+    .home-button:hover {
+      background: #1769aa;
+      transform: translateY(-2px) scale(1.03);
+    }
+   .home-container {
+     width: 100%;
+     position: fixed;
+     bottom: 32px;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     z-index: 10;
+    }
+    @media (max-width: 450px) {
+      .content, .home-container {
+        width: 98vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 16px 4vw;
+      }
+      iframe {
+        width: 96vw;
+        min-width: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="content">
@@ -17,8 +121,8 @@
       title="TryHackMe Profile"
     ></iframe>
   </div>
-  <div class="home-container">
-    <a href="index.html" class="home-button">Home</a>
-  </div>
+    <div class="home-container">
+      <a href="index.html" class="home-button">Home</a>
+    </div>
 </body>
 </html>
